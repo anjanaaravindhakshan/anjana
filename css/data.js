@@ -1,0 +1,25 @@
+obj={}
+console.log(obj)
+person={
+    "name":"er",
+    "age":87,
+    "adress":"ree"
+}
+    console.log(person)
+         person.mobileno=08644
+         //or
+         person["mobileno"]=90876
+         console.log(person)
+         person.update=function(name){
+             person.name=name
+             console.log(person.name)
+         }
+         console.log(person)
+         //console.log("person",Object.isFrozen(person))
+         Object.seal(person)
+         student={"rollno":2}
+         Object.assign(student,person)
+         console.log(student)
+         for(i of Object.keys(person)){
+             console.log(i)
+         }

@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+    </head>
+
+<body>
+        <h2 style="margin:5px">parking</h2>
+        <script>
+            function details(vehicle,hour,time){
+                this.vehicle=vehicle
+                this.hour=hour
+                this.time=time
+            }
+            function save(){
+                obj=[]
+            var vehicleNo=document.getElementById('vehicleNo').value
+            var entryTime=document.getElementById('Entry Time').value
+            var hours=document.getElementById('hours').value
+            obj=new details(vehicleNo,entryTime,hours)
+            console.log(obj)
+            }
+            function remove(){
+                console.log(remove)
+            }
+        </script>
+        <body>
+                <form action="" name="" id=""></form>
+                <div>
+                <label for="">VehileNo :</label>
+                <input type="text" id="vehicleNo"><br>
+                </div>
+                <div>
+                <label for="">Entry Time :</label>
+                <input type="text" id="Entry Time"><br>
+                </div>
+                <div>
+                <label for="">Hours:</label>
+                <input type="number" id="hours"><br>
+                </div>
+                <button onclick="save()">save</button>
+        <div>
+            <button onclick="remove()">remove</button>
+            <div style="display:none"></div>
+            <input type="text" onblur="remove()" id="">
+        </div>
+</body>
+</html>

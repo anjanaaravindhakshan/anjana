@@ -1,0 +1,39 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <script>
+            function load(){
+                console.log("load function")
+                document.getElementById('img1').style.display="none"
+                document.getElementById('img2').style.display="block"
+            }
+            function reload(){
+                console.log("Reload function")
+                document.getElementById('img2').style.display="none"
+                document.getElementById('img1').style.display="block"
+            }
+            function getstate(){
+                console.log("warning")
+                state=document.getElementById('states').value
+                document.getElementById('chosenstate').value
+                alert("you have selected"+state)
+            }
+        </script>
+    </head>
+    <body>
+        <div onclick="load()" style="display:block" id="img1"> 
+            <img src="Images/img1.png" alt="">
+
+        </div>
+        <div style="display:none" onclick="reload()" id="img2">
+            <img src="Images/img2.png" alt="">
+        </div>
+
+        <select name="" id="states" onchange="getstate()">
+            <option value="">Choose your option</option>
+            <option value="Kerala" selected>Kerala</option>
+            <option value="Tamilnadu">Chennai</option>
+        </select>
+        <input type="text" id="chosenstate" >
+    </body>
+</html>

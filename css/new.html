@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function search(){
+                var content=document.getElementById('content').value
+                var word=document.getElementById('search').value
+                var exp=new RegExp(word,'g')
+                //var words=content.match(exp)
+                //alert(word+"length:"+words.length)
+                newcontent=content.replace(exp,"<span style='color:red'>"+word+"</span>")
+                document.getElementById('para1').innerHTML=newcontent
+            //content.match(/is/)
+            }
+        </script>
+        <p id=para1></p>
+        <textarea name="" cols="30" rows="10" id="content">
+    
+</textarea>
+    <input type="text" id="search">
+<button onclick="search()">click</button>
+    </body>
+</html>

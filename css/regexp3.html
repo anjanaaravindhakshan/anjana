@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="txt1">
+    <button onclick="check()">click</button>
+    <script>
+        function check(){
+            var name=document.getElementById('txt1').value
+             var regexp=/^(987)\d{7}$/g
+            var result=regexp.text(name)
+            
+            if(result){
+                alert("valid")
+            }
+            else{
+                alert("invalid")
+
+            }
+    }
+    </script>
+
+</body>
+
+</html>

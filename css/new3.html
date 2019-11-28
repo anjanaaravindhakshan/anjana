@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script src="js/script.js">
+            function productlist(){
+               product={}
+                var pid=document.getElementById('pid').value
+                var name=document.getElementById('name').value
+                var price=document.getElementById('price').value
+                alert(pid,name,price)
+            }
+        </script>
+        <form action="" onsubmit="getValues()">
+            <div><input type="text" id=pid required></div>
+            <div><input type="text" id=name required></div>
+            <div><input type="text" id=price required></div>
+        </form>
+        <input type="text" id="pid">
+        <button onclick="productlist()">click</button>
+        </body>
+        </html>

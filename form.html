@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            function validate(){
+                var name=document.getElementById('name')
+                if(name.value ==""){
+                    //console.log("empty")
+                    alert("name field cannot be empty.....")
+                    name.focus()
+                    return false
+                }
+                var age=document.getElementById('age')
+                if(age.value==""){
+                    alert("Age field cannot be empty")
+                    age.focus()
+                    return false
+                }
+                var mob=document.getElementById('mob')
+                if(mob.value.length<10){
+                    alert("Mobile number contain 10 dig")
+                    mob.focus()
+                    return false
+                }
+                data=confirm("do you want to to submit?")
+                console.log(data)
+                if(data==false){
+                    return false
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <form action="index.html" onsubmit="return validate()">
+        <label for="">Name :</label>
+        <input type="text" id="name"><br>
+        <label for="">Age :</label>
+        <input type="text" id="age"><br>
+        <label for="">Mobile No:</label>
+        <input type="number" id="mob"><br>
+        <input type="submit">
+    </form>
+    </body>
+</html>

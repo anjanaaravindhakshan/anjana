@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+<body>
+    <script>
+        var arr = ["a", "b", 12, 23, "c"]
+        result = arr.every((x)=> {
+            console.log(x)
+            console.log("called..")
+            var regex = /[a-zA-Z]+/g
+            return regex.test(x)
+        })
+ console.log(result)
+var str=" hi hello world"
+words=str.split("")
+words.forEach(element=>{ 
+    console.log(element)
+});
+var stmt="java script"+" java is object oriented"
+var a=stmt.match(/java/g).length
+console.log(a)
+
+</script>
+</body>
+</head>
+</html>
